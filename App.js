@@ -1,21 +1,37 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { createStackNavigator, createAppContainer} from 'react-navigation'; 
+
+import HomeScreen from './screens/HomeScreen'
+import PreferenceScreen from './screens/PreferenceScreen'
+import PlanScreen from './screens/PlanScreen'
+import ChatScreen from './screens/ChatScreen'
+import BookmarksScreen from './screens/BookmarksScreen'
+
+
+const AppStackNavigator = createStackNavigator({
+  Home: { screen: HomeScreen },
+  Preference:  { screen: PreferenceScreen },
+  Plan:  { screen: PlanScreen },
+  Chat:  { screen: ChatScreen },
+  Bookmarks:  { screen: BookmarksScreen },
+});
+const AppContainer = createAppContainer(AppStackNavigator);
+
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <SafeAreaView style={styles.safeArea}>
+        <AppContainer /> 
+      </SafeAreaView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  safeArea: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: '#ddd',
+  }
 });
