@@ -1,12 +1,16 @@
+import PropTypes from 'prop-types'
 import React, {Component} from 'react';
-import { View, Text } from 'react-native';
+import {Icon} from 'react-native-elements';
+import { NavigatorIOS, TouchableHighlight, View, Text } from 'react-native';
+ 
+import Navbar from '../components/navbar.js'
 
-export default class HomeScreen extends Component {
-	render() {
-		return (
-			<View>
-				<Text>This is the home screen</Text>
-			</View>
-		);
-	}
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <Navbar navigation={this.props.navigation}/>
+      </View>
+    )
+  }
 }
