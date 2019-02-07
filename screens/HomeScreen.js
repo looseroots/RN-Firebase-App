@@ -5,8 +5,11 @@ import { ScrollView, FlatList, StyleSheet, TouchableHighlight, View, Text, SafeA
 
 import Post from '../components/post';
 
-export default class HomeScreen extends React.Component {
+// Color scheme
+import { colors, fonts } from '../theme/variables';
 
+
+export default class HomeScreen extends React.Component {
 	// Constructor used to initialize state of component
 	// and binding methods, so they may be passed as props to other components
 	constructor(props){
@@ -35,9 +38,9 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
+      <SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
       	<View style={styles.topBar}>
-      		<Text style={styles.topBarText}>Home Screen</Text>
+      		<Text style={styles.topBarText}>LooseRoots</Text>
       	</View>
 		  	<View style={styles.mainArea}>
 		    	<ScrollView>
@@ -56,7 +59,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   topBar: {
   	height: 50,
-    backgroundColor: 'black',
+    backgroundColor: colors.THEME_COLOR,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -66,5 +69,6 @@ const styles = StyleSheet.create({
   },
   mainArea: {
   	flex: 1,
+  	backgroundColor:'white',
   }
 });
