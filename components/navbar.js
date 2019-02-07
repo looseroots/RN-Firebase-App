@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
     return (
       <View style={styles.navbar_container}>
       	<NavbarTile title="Home" pageRoute="Home" navigation={this.props.navigation}/>
-      	<NavbarTile title="Preference" pageRoute='Preference' navigation={this.props.navigation}/>
+      	<NavbarTile title="Preference" pageRoute="Preference" navigation={this.props.navigation}/>
       	<NavbarTile title="Plan" pageRoute="Plan" navigation={this.props.navigation}/>
       	<NavbarTile title="Chat" pageRoute="Chat" navigation={this.props.navigation}/>
       	<NavbarTile title="Bookmarks" pageRoute="Bookmarks" navigation={this.props.navigation}/>
@@ -18,12 +18,18 @@ export default class Navbar extends React.Component {
 }
 
 class NavbarTile extends React.Component {
+	changeScreen = () => {
+		console.log(this.props.navigation.state.routeName)
+		if (this.props.pageRoute != this.props.navigation.state.routeName){
+			this.props.navigation.push(this.props.pageRoute)
+		}
+	}
+
 	render(){
 		return (
 			<View style={{flex: 1}}>
-				<TouchableHighlight underlayColor="transparent" onPress={() => this.props.navigation.push(this.props.pageRoute)}>
+				<TouchableHighlight underlayColor="transparent" onPress={this.changeScreen}>
 					<Text>{this.props.title}</Text>
-
 				</TouchableHighlight>
 			</View>
 		);

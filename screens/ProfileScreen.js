@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import { StyleSheet, TouchableHighlight, View, Text, SafeAreaView } from 'react-native';
 
-export default class PreferenceScreen extends Component {
+export default class ProfileScreen extends Component {
 	render() {
 		return (
 			<SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
       	<View style={styles.topBar}>
-      		<Text style={styles.topBarText}>Preference Screen</Text>
+      		<Text style={styles.topBarText}>Profile Screen</Text>
       	</View>
 		  	<View style={styles.mainArea}>
 		    	<Text>
-		    		This is the preference screen. {"\n"}
-						Cody is going to work on this page. 
+		    		This is the profile screen. {"\n"}
+		    		Jack is going to work on this.
 		    	</Text>
 		  	</View>
 			</SafeAreaView>
