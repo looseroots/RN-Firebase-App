@@ -6,14 +6,17 @@ import { ScrollView, FlatList, StyleSheet, TouchableHighlight, View, Text, SafeA
 import Post from '../components/post';
 
 export default class HomeScreen extends React.Component {
+
+	// Constructor used to initialize state of component
+	// and binding methods, so they may be passed as props to other components
 	constructor(props){
 		super(props);
 	}
 
+	// State variable holds relevant data for state of component
 	state = {
 		posts: [
-			{key:
-				"Example posts will go here. Try scrolling down. \n\nCody is going to work on this page. "}, 
+			{key:"Example posts will go here. Try scrolling down. \n\nCody is going to work on this page. "}, 
 			{key:"The science of today is the technology of tomorrow."},
 			{key:"Science is a beautiful gift to humanity; we should not distort it."},
 			{key:"Only two things are infinite, the universe and human stupidity, and I'm not sure about the former."},
