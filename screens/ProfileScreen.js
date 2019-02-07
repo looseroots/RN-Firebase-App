@@ -4,15 +4,15 @@ import { StyleSheet, TouchableHighlight, View, Text, SafeAreaView } from 'react-
 import { colors, fonts } from '../theme/variables'; // Color scheme
 import TopBannerBar from '../components/TopBannerBar';
 
-export default class PreferenceScreen extends Component {
+export default class ProfileScreen extends Component {
 	render() {
 		return (
 			<SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
-      	<TopBannerBar label= "Learning" />
+      	<TopBannerBar label= "Profile" />
 		  	<View style={styles.mainAreaContainer}>
           <Text>
-            This is the preference page. {"\n"}
-            Cody is going to work on this page. 
+            This is the planning page. {"\n"}
+            Jack is going to work on this page. 
           </Text>
         </View>
 			</SafeAreaView>
@@ -27,3 +27,4 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
 });
+
