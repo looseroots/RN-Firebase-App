@@ -15,7 +15,7 @@ export default class TopBannerBar extends Component {
 
 const styles = StyleSheet.create({
   topBar: {
-  	height: 50,
+  	height: 42,
     backgroundColor: colors.THEME_COLOR,
     justifyContent: 'center',
     alignItems: 'center',

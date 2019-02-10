@@ -7,7 +7,7 @@ import Post from '../components/post';
 
 // Color scheme
 import { colors, fonts } from '../theme/variables';
-
+import TopBannerBar from '../components/TopBannerBar';
 
 export default class HomeScreen extends React.Component {
 	// Constructor used to initialize state of component
@@ -39,9 +39,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
-      	<View style={styles.topBar}>
-      		<Text style={styles.topBarText}>LooseRoots</Text>
-      	</View>
+      	<TopBannerBar label= "LooseRoots" />
 		  	<View style={styles.mainArea}>
 		    	<ScrollView>
 						<FlatList
@@ -57,16 +55,6 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  topBar: {
-  	height: 50,
-    backgroundColor: colors.THEME_COLOR,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  topBarText: {
-  	color: 'white',
-  	fontSize: 20,
-  },
   mainArea: {
   	flex: 1,
   	backgroundColor:'white',

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import { StyleSheet, TouchableHighlight, View, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, ScrollView, TouchableHighlight, View, Text, SafeAreaView } from 'react-native';
 
 import { colors, fonts } from '../theme/variables'; // Color scheme
 import TopBannerBar from '../components/TopBannerBar';
+import EventContainer from '../components/preference_screen/EventContainer';
 
 export default class PreferenceScreen extends Component {
 	render() {
@@ -10,10 +11,16 @@ export default class PreferenceScreen extends Component {
 			<SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
       	<TopBannerBar label= "Learning" />
 		  	<View style={styles.mainAreaContainer}>
-          <Text>
-            This is the preference page. {"\n"}
-            Cody is going to work on this page. 
-          </Text>
+          <ScrollView 
+            horizontal={true}
+            pagingEnabled={true}
+            style={styles.swipeWindow}
+          >
+            <EventContainer text="Ligma"/>
+            <EventContainer text="Large"/>
+            <EventContainer text="Lumpy"/>
+            <EventContainer text="Ballsack"/>
+          </ScrollView>
         </View>
 			</SafeAreaView>
 		);
@@ -23,7 +30,9 @@ export default class PreferenceScreen extends Component {
 const styles = StyleSheet.create({
   mainAreaContainer: {
     flex: 1,
-    padding: 10,
     backgroundColor: 'white',
   },
+  swipeWindow: {
+    flex: 1
+  }
 });
