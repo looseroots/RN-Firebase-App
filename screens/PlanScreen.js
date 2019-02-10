@@ -8,13 +8,13 @@ export default class PlanScreen extends Component {
 	render() {
 		return (
 			<SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
-      	<TopBannerBar label= "Plan Screen" />
-		  	<View style={styles.mainAreaContainer}>
-					<Text>
-						This is the planning page. {"\n"}
-						Jack is going to work on this page. 
-					</Text>
-		  	</View>
+      		<TopBannerBar label= "Plan Screen" />
+		  		<View style={styles.mainAreaContainer}>
+						<Text>
+							This is the planning page. {"\n"}
+							Jack is going to work on this page. 
+						</Text>
+		  		</View>
 			</SafeAreaView>
 		);
 	}
