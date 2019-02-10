@@ -23,16 +23,19 @@ const styles = StyleSheet.create({
     parentContainer: {
     	flex: 1,
     	width: device_width,
-    	backgroundColor: 'white',
+      backgroundColor: '#EDEDED',
     	alignItems: 'center',
     	justifyContent: 'center',
     },
     eventContainer: {
     	width: '90%',
     	height: '90%',
-    	backgroundColor: 'lightgrey',
-    	borderWidth: 1,
+    	backgroundColor: 'white',
     	borderRadius: 20,
+      
+      shadowOffset:{  width: 2,  height: 2,  },
+      shadowColor: 'black',
+      shadowOpacity: .4,
 
     	padding: '10%',
     }
