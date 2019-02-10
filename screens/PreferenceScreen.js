@@ -30,9 +30,9 @@ export default class PreferenceScreen extends Component {
 const styles = StyleSheet.create({
   mainAreaContainer: {
     flex: 1,
-    backgroundColor: 'white',
   },
   swipeWindow: {
-    flex: 1
+    flex: 1,
+    backgroundColor: '#EDEDED',
   }
 });
