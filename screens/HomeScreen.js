@@ -19,8 +19,8 @@ export default class HomeScreen extends React.Component {
 	// State variable holds relevant data for state of component
 	state = {
 		posts: [
-			{key:"Example posts will go here. Try scrolling down. \n\nCody is going to work on this page. "}, 
-			{key:"The science of today is the technology of tomorrow."},
+			{key:"Example posts will go here. Try scrolling down. Cody is going to work on this page. "}, 
+			{key:"ffffffffff."},
 			{key:"Science is a beautiful gift to humanity; we should not distort it."},
 			{key:"Only two things are infinite, the universe and human stupidity, and I'm not sure about the former."},
 			{key:"Science is a way of thinking much more than it is a body of knowledge."},
@@ -57,6 +57,6 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   mainArea: {
   	flex: 1,
-  	backgroundColor:'white',
+  	backgroundColor:'#EDEDED',
   }
 });
