@@ -5,7 +5,7 @@ import { Icon } from 'react-native-elements'; // Icons for tab navigator
 
 // Importing the screens in the tab navigation bar
 import HomeScreen from './screens/HomeScreen'
-import PreferenceScreen from './screens/PreferenceScreen'
+import ExploreScreen from './screens/ExploreScreen'
 import PlanScreen from './screens/PlanScreen'
 import ChatScreen from './screens/ChatScreen'
 import ProfileScreen from './screens/ProfileScreen'
@@ -20,7 +20,7 @@ const getTabBarIcon = (navigation, focused, tintColor) => {
     iconName = `home`;
     iconSize = 25;
     iconFamily = "font-awesome";
-  } else if ( routeName == "Preference"){
+  } else if ( routeName == "Explore"){
     iconName = `heart`;
     iconSize = 23;
     iconFamily = "font-awesome";
@@ -44,7 +44,7 @@ const getTabBarIcon = (navigation, focused, tintColor) => {
 const TabNavigator = createBottomTabNavigator(
   {
     Home: { screen: HomeScreen },
-    Preference: { screen: PreferenceScreen },
+    Explore: { screen: ExploreScreen },
     Plan:  { screen: PlanScreen },
     Chat:  { screen: ChatScreen },
     Profile:  { screen: ProfileScreen },
