@@ -1,5 +1,5 @@
 # LooseRoots
-Find and collaboratively plan outings catered towards your interests
+### Find and collaboratively plan outings catered towards your interests
 
 The first prototype for LooseRoots is being built in React Native using the Expo Toolchain, with Firebase Integration
 
