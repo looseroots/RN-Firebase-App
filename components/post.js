@@ -13,7 +13,6 @@ export default class Post extends React.Component {
 
     return (
       <View style={styles.main}>
-
         <View style={styles.postHeader}>
           <View style={styles.postHeaderIcon}>
             <Text>Insert icon here</Text>
@@ -31,7 +30,6 @@ export default class Post extends React.Component {
         <View style={styles.postFooter}>
           <Text>{postBodyText}</Text>
         </View>
-
       </View>
     );
 	}
@@ -49,29 +47,36 @@ const styles = StyleSheet.create({
     postHeader : {
       height: '18%',
       flexDirection: 'row',
+      borderTopLeftRadius: 10,
+      borderTopRightRadius: 10,
     },
     postHeaderIcon: {
       width: '20%',
-      backgroundColor: 'grey',
-
+      backgroundColor: 'white',
+      borderTopLeftRadius: 10,
       padding: 10,
+      borderWidth: .5,
     },
     postHeaderText: {
       width: '80%',
-      backgroundColor: 'lightgrey',
-
+      backgroundColor: 'white',
       padding: 10,
+      borderTopRightRadius: 10,
+      borderWidth: .5,
     },
     postPhoto: {
       height: '72%',
-      backgroundColor: 'lightblue',
-
+      backgroundColor: 'white',
       padding: 10,
+      borderLeftWidth: .5,
+      borderRightWidth: .5,
     },
     postFooter: {
       height: '10%',
-      backgroundColor: 'pink',
-
+      backgroundColor: 'white',
       padding: 6,
+      borderBottomLeftRadius: 10,
+      borderBottomRightRadius: 10,
+      borderWidth: .5,
     },
 })
