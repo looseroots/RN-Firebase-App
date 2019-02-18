@@ -1,7 +1,7 @@
-# RN-Firebase-App
-MVP LooseRoots built in React Native using the Expo Toolchain, with Firebase Integration
+# LooseRoots
+Find and collaboratively plan outings catered towards your interests
 
-An group event planning social media application.
+The first prototype for LooseRoots is being built in React Native using the Expo Toolchain, with Firebase Integration
 
 Current state of the application:
 
