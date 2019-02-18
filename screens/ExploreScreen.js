@@ -5,7 +5,7 @@ import { colors, fonts } from '../theme/variables'; // Color scheme
 import TopBannerBar from '../components/TopBannerBar';
 import EventContainer from '../components/explore_screen/EventContainer';
 
-export default class PreferenceScreen extends Component {
+export default class ExploreScreen extends Component {
 	render() {
 		return (
 			<SafeAreaView style={{flex: 1, backgroundColor: colors.THEME_COLOR}}>
